@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.i044114_i012114.proyectofinalandroid.Views.LoginUserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        >
+
+    <EditText
+        android:id="@+id/id_et_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+
+        />
+
+    <EditText
+        android:id="@+id/id_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_below="@id/id_et_users"
+        />
+
+        <Button
+            android:id="@+id/id_btn_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESAR"
+            android:theme="@style/RaisedButtonDark"
+            android:layout_below="@id/id_et_password"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:onClick="searchContact"
+            />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
