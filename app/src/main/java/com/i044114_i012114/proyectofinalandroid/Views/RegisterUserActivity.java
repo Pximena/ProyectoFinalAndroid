@@ -77,7 +77,7 @@ public class RegisterUserActivity extends AppCompatActivity {
         values.put(Constants.TABLA_FIELD_ADDRESS, textInputEditTextAddress.getText().toString());
         values.put(Constants.TABLA_FIELD_PASSWORD, textInputEditTextPassword.getText().toString());
 
-        Long idResult = db.insert(Constants.TABLA_NAME_USERS, Constants.TABLA_FIELD_ID, values);
+        Long idResult = db.insert(Constants.TABLA_NAME_USERS,null, values);
 
         textInputEditTextId.setText("");
         textInputEditTextName.setText("");

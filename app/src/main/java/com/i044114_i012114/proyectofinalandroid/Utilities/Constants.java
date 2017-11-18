@@ -22,5 +22,21 @@ public class Constants {
                     TABLA_FIELD_ADDRESS+" TEXT, "+
                     TABLA_FIELD_PASSWORD+ "TEXT)";
 
+    public static final String TABLE_NAME_PRODUCTS = "products";
+    public static final String TABLE_FIELD_PRODUCTS_ID = "id";
+    public static final String TABLE_FIELD_PRODUCTS_NAME = "name";
+    public static final String TABLE_FIELD_PRODUCTS_DESCRIPTION = "description";
+    public static final String TABLE_FIELD_PRODUCTS_PRICE = "quantity";
+    public static final String TABLE_FIELD_PRODUCTS_IMAGE = "image";
+    public static final String CREATE_TABLE_PRODUCTS =
+            "CREATE TABLE "+ TABLE_NAME_PRODUCTS+" ("+
+                    TABLE_FIELD_PRODUCTS_ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                    TABLE_FIELD_PRODUCTS_NAME+" TEXT, "+
+                    TABLE_FIELD_PRODUCTS_DESCRIPTION+" TEXT, "+
+                    TABLE_FIELD_PRODUCTS_PRICE+" TEXT, "+
+                    TABLE_FIELD_PRODUCTS_IMAGE+" TEXT)";
+
+
+
 }
 

@@ -41,9 +41,19 @@
             android:layout_below="@id/id_et_password"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:onClick="searchContact"
+            android:onClick="login"
             />
-
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_btn_ingresar"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_marginTop="10dp"/>
     </RelativeLayout>
 
 

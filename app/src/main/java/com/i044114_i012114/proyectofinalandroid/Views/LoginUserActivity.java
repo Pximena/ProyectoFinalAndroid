@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.i044114_i012114.proyectofinalandroid.Adapters.UserAdapter;
 import com.i044114_i012114.proyectofinalandroid.Helpers.SqliteHelper;
+import com.i044114_i012114.proyectofinalandroid.LoginActivity;
 import com.i044114_i012114.proyectofinalandroid.Models.Users;
 import com.i044114_i012114.proyectofinalandroid.R;
 import com.i044114_i012114.proyectofinalandroid.Utilities.Constants;
@@ -46,4 +47,22 @@ public class LoginUserActivity extends AppCompatActivity {
 
         }
 
-      }
+        public void login (View view){
+            SQLiteDatabase db= sqliteHelper.getWritableDatabase();
+            Cursor cursor = db.rawQuery("select name,password from users where name = '"+editTextUser.getText()+"' and password = '"+editTextPassword+"'", null);
+
+            if (cursor.moveToFirst()==true){
+               if (editTextUser.equals(Constants.TABLA_FIELD_NAME) && editTextPassword.equals(Constants.TABLA_FIELD_PASSWORD)){
+                   Intent intent = new Intent(this, ProductListActivity.class);
+                   startActivity(intent);
+               }else{
+                   Toast.makeText(this, "no se encontro el usuario", Toast.LENGTH_SHORT).show();
+               }
+            }
+
+            cursor.close();
+        }
+
+
+    }
+

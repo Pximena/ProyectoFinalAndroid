@@ -14,6 +14,7 @@ import com.i044114_i012114.proyectofinalandroid.Adapters.UserAdapter;
 import com.i044114_i012114.proyectofinalandroid.Helpers.SqliteHelper;
 import com.i044114_i012114.proyectofinalandroid.Models.Users;
 import com.i044114_i012114.proyectofinalandroid.Views.LoginUserActivity;
+import com.i044114_i012114.proyectofinalandroid.Views.ProductListActivity;
 import com.i044114_i012114.proyectofinalandroid.Views.RegisterUserActivity;
 
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goToLogin (View view){
-        Intent intent = new Intent(this, LoginUserActivity.class);
+        Intent intent = new Intent(this, ProductListActivity.class);
         startActivity(intent);
 
     }
